@@ -3,27 +3,32 @@ import re
 def classify_product_area(text):
     text_lower = text.lower()
     
-    # 1. Payments / Financial
-    payments_keywords = ["money", "payment", "refund", "charge", "card", "invoice", "billing", "subscription", "pricing", "cost", "spend", "cheque", "minimum spend"]
-    if any(kw in text_lower for kw in payments_keywords):
+    # 1. Clear Payments / Financial (CRITICAL override)
+    clear_payments_keywords = ["payment", "refund", "charge", "card", "money"]
+    if any(kw in text_lower for kw in clear_payments_keywords):
         return "payments"
         
-    # 2. Authentication
+    # 2. Assessments (Overrides weak payment keywords)
+    assessment_keywords = ["mock interview", "test", "assessment", "submission", "compiler", "challenge", "score", "interviewer", "candidate", "variant", "hackerrank test", "time limit", "practice"]
+    if any(kw in text_lower for kw in assessment_keywords):
+        return "assessments"
+        
+    # 3. Secondary Payments
+    secondary_payments_keywords = ["invoice", "billing", "subscription", "pricing", "cost", "spend", "cheque", "minimum spend"]
+    if any(kw in text_lower for kw in secondary_payments_keywords):
+        return "payments"
+        
+    # 4. Authentication
     auth_keywords = ["login", "password", "access", "account", "locked", "sign up", "sign in", "reset", "cannot login"]
     if any(kw in text_lower for kw in auth_keywords):
         return "authentication"
         
-    # 3. Assessments
-    assessment_keywords = ["mock interview", "test", "submission", "compiler", "assessment", "score", "interviewer", "candidate", "variant", "challenge", "hackerrank test", "time limit", "practice"]
-    if any(kw in text_lower for kw in assessment_keywords):
-        return "assessments"
-        
-    # 4. Permissions
+    # 5. Permissions
     permission_keywords = ["permission", "role", "admin", "remove", "seat", "workspace", "invite", "add user", "privilege"]
     if any(kw in text_lower for kw in permission_keywords):
         return "permissions"
         
-    # 5. Security & Privacy
+    # 6. Security & Privacy
     security_keywords = ["privacy", "data", "crawl", "stolen", "vulnerability", "security", "gdpr", "delete account", "identity"]
     if any(kw in text_lower for kw in security_keywords):
         return "security_and_privacy"
