@@ -1,0 +1,30 @@
+status,product_area,response,justification,request_type
+escalated,authentication,Your ticket has been escalated to a human agent for further review.,Slightly low confidence for a sensitive product area.,product_issue
+escalated,assessments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,Sensitive billing or payment issue detected.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,Sensitive billing or payment issue detected.,bug
+replied,payments,"Please try clearing your browser cache, restarting the application, or checking your internet connection. If the issue persists, a human agent will assist you shortly.",Low confidence but provided safe generic troubleshooting for bug.,bug
+escalated,general_support,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+replied,assessments,"Please try clearing your browser cache, restarting the application, or checking your internet connection. If the issue persists, a human agent will assist you shortly.",Low confidence but provided safe generic troubleshooting for bug.,bug
+escalated,assessments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+replied,assessments,"Please try clearing your browser cache, restarting the application, or checking your internet connection. If the issue persists, a human agent will assist you shortly.",Low confidence but provided safe generic troubleshooting for bug.,bug
+replied,assessments,The assessment time limit is determined by the company issuing the test. Check your invitation email.,Slightly low confidence but safe category.,feature_request
+escalated,assessments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+replied,general_support,"Please try clearing your browser cache, restarting the application, or checking your internet connection. If the issue persists, a human agent will assist you shortly.",Low confidence but provided safe generic troubleshooting for bug.,bug
+escalated,assessments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+replied,general_support,Welcome to the Claude FAQ. Claude is an AI assistant created by Anthropic.,Slightly low confidence but safe product area.,bug
+escalated,security_and_privacy,Your ticket has been escalated to a human agent for further review.,High-risk financial or security keywords detected.,product_issue
+replied,general_support,"Please try clearing your browser cache, restarting the application, or checking your internet connection. If the issue persists, a human agent will assist you shortly.",Low confidence but provided safe generic troubleshooting for bug.,bug
+escalated,assessments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,Sensitive billing or payment issue detected.,product_issue
+escalated,security_and_privacy,Your ticket has been escalated to a human agent for further review.,Slightly low confidence for a sensitive product area.,bug
+replied,security_and_privacy,Welcome to the Claude FAQ. Claude is an AI assistant created by Anthropic.,Strong match found in corpus and no high-risk factors.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,High-risk financial or security keywords detected.,product_issue
+escalated,security_and_privacy,Your ticket has been escalated to a human agent for further review.,Slightly low confidence for a sensitive product area.,product_issue
+escalated,general_support,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+escalated,general_support,Your ticket has been escalated to a human agent for further review.,High-risk financial or security keywords detected.,product_issue
+replied,general_support,Welcome to the Claude FAQ. Claude is an AI assistant created by Anthropic.,Slightly low confidence but safe product area.,bug
+escalated,authentication,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue
+replied,general_support,Welcome to the Claude FAQ. Claude is an AI assistant created by Anthropic.,Slightly low confidence but safe product area.,product_issue
+escalated,payments,Your ticket has been escalated to a human agent for further review.,Low confidence and no safe automated resolution.,product_issue

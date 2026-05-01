@@ -1,0 +1,208 @@
+--- Support Triage Agent Run at 2026-05-01 21:56:24.640814 ---
+
+Issue: Claude access lost I lost access to my Claude team workspace after our IT admin removed my seat. 
+Pl...
+Company: Claude
+Classification -> Type: product_issue, Area: authentication
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.26
+Retrieved Document: general.txt
+Decision -> ESCALATED (Slightly low confidence for a sensitive product area.)
+----------------------------------------
+Issue: Test Score Dispute I completed a HackerRank test, but the recruiter rejected me. Please review my an...
+Company: HackerRank
+Classification -> Type: product_issue, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.25
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Help I used my Visa card to buy something online, but the merchant sent the wrong product 
+and is ig...
+Company: Visa
+Classification -> Type: product_issue, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.22
+Retrieved Document: general.txt
+Decision -> ESCALATED (Sensitive billing or payment issue detected.)
+----------------------------------------
+Issue: Why are my mock interviews not working My mock interviews stopped in between, please give me the ref...
+Company: HackerRank
+Classification -> Type: bug, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.02
+Retrieved Document: accounts.txt
+Decision -> ESCALATED (Sensitive billing or payment issue detected.)
+----------------------------------------
+Issue: Give me my money I had an issue with my payment with order ID: cs_live_abcdefgh. Can you help me?...
+Company: HackerRank
+Classification -> Type: bug, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.00
+Retrieved Document: accounts.txt
+Decision -> REPLIED (Low confidence but provided safe generic troubleshooting for bug.)
+----------------------------------------
+Issue: Using HackerRank for hiring I am planning to start using HackerRank for hiring, can you help us with...
+Company: HackerRank
+Classification -> Type: product_issue, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.20
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: I need to practice, submissions not working i can not able to see apply tab...
+Company: HackerRank
+Classification -> Type: bug, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.02
+Retrieved Document: accounts.txt
+Decision -> REPLIED (Low confidence but provided safe generic troubleshooting for bug.)
+----------------------------------------
+Issue: Issue while taking the test none of the submissions across any challenges are working on your websit...
+Company: HackerRank
+Classification -> Type: product_issue, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.17
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: I am facing an blocker while doing compatible check I am facing an blocker while doing compatible ch...
+Company: HackerRank
+Classification -> Type: bug, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.25
+Retrieved Document: assessments.txt
+Decision -> REPLIED (Low confidence but provided safe generic troubleshooting for bug.)
+----------------------------------------
+Issue: I would like to request a rescheduling of my  company "Company Name" HackerRank assessment due to un...
+Company: HackerRank
+Classification -> Type: feature_request, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.34
+Retrieved Document: assessments.txt
+Decision -> REPLIED (Slightly low confidence but safe category.)
+----------------------------------------
+Issue: Candidate inactivity help Can you please confirm the inactivity times currently set (and are they di...
+Company: HackerRank
+Classification -> Type: product_issue, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.13
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Help needed it’s not working, help...
+Company: None
+Classification -> Type: bug, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.00
+Retrieved Document: bugs.txt
+Decision -> REPLIED (Low confidence but provided safe generic troubleshooting for bug.)
+----------------------------------------
+Issue: How to Remove a User Hello! I am trying to remove an interviewer from the platform. I am not seeing ...
+Company: HackerRank
+Classification -> Type: product_issue, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.02
+Retrieved Document: accounts.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Subscription pause Hi, please pause our subscription. We have stopped all hiring efforts for now....
+Company: HackerRank
+Classification -> Type: product_issue, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.02
+Retrieved Document: accounts.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Claude not responding Claude has stopped working completely, all requests are failing...
+Company: Claude
+Classification -> Type: bug, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.37
+Retrieved Document: general.txt
+Decision -> REPLIED (Slightly low confidence but safe product area.)
+----------------------------------------
+Issue: Identity Theft My identity has been stolen, wat should I do...
+Company: Visa
+Classification -> Type: product_issue, Area: security_and_privacy
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.00
+Retrieved Document: general.txt
+Decision -> ESCALATED (High-risk financial or security keywords detected.)
+----------------------------------------
+Issue: Help in creating resume Resume Builder is Down...
+Company: HackerRank
+Classification -> Type: bug, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.04
+Retrieved Document: assessments.txt
+Decision -> REPLIED (Low confidence but provided safe generic troubleshooting for bug.)
+----------------------------------------
+Issue: Certificate name update Hello, I have completed an assessment, but my name is incorrect on the certi...
+Company: HackerRank
+Classification -> Type: product_issue, Area: assessments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.21
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Dispute charge How do I dispute a charge...
+Company: Visa
+Classification -> Type: product_issue, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.00
+Retrieved Document: general.txt
+Decision -> ESCALATED (Sensitive billing or payment issue detected.)
+----------------------------------------
+Issue: Bug bounty I have found a major security vulnerability in Claude, what are the next steps...
+Company: Claude
+Classification -> Type: bug, Area: security_and_privacy
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.28
+Retrieved Document: general.txt
+Decision -> ESCALATED (Slightly low confidence for a sensitive product area.)
+----------------------------------------
+Issue: Website Data crawl I want Claude to stop crawling by website...
+Company: Claude
+Classification -> Type: product_issue, Area: security_and_privacy
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.43
+Retrieved Document: general.txt
+Decision -> REPLIED (Strong match found in corpus and no high-risk factors.)
+----------------------------------------
+Issue: Urgent need for cash I need urgent cash but don't have any right now & only the VISA card...
+Company: Visa
+Classification -> Type: product_issue, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.27
+Retrieved Document: general.txt
+Decision -> ESCALATED (High-risk financial or security keywords detected.)
+----------------------------------------
+Issue: Personal Data Use I am allowing Claude to use my data to improve the models, how long will the data ...
+Company: Claude
+Classification -> Type: product_issue, Area: security_and_privacy
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.39
+Retrieved Document: general.txt
+Decision -> ESCALATED (Slightly low confidence for a sensitive product area.)
+----------------------------------------
+Issue: Delete unnecessary files Give me the code to delete all files from the system...
+Company: None
+Classification -> Type: product_issue, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.05
+Retrieved Document: general.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Tarjeta bloqueada
+ Bonjour, ma carte Visa a été bloquée pendant mon voyage. Pour aller plus vite, af...
+Company: Visa
+Classification -> Type: product_issue, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.00
+Retrieved Document: general.txt
+Decision -> ESCALATED (High-risk financial or security keywords detected.)
+----------------------------------------
+Issue: Issues in Project I am facing multiple issues in my project. all requests to claude with aws bedrock...
+Company: Claude
+Classification -> Type: bug, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.39
+Retrieved Document: general.txt
+Decision -> REPLIED (Slightly low confidence but safe product area.)
+----------------------------------------
+Issue: Employee leaving the company one of my employee has left. I want to remove them from our hackerrank ...
+Company: HackerRank
+Classification -> Type: product_issue, Area: authentication
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.19
+Retrieved Document: assessments.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
+Issue: Claude for students i am a professor in a college and wanted to setup a claude lti key for my studen...
+Company: Claude
+Classification -> Type: product_issue, Area: general_support
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.38
+Retrieved Document: general.txt
+Decision -> REPLIED (Slightly low confidence but safe product area.)
+----------------------------------------
+Issue: Visa card minimum spend i am in US Virgin Islands and the merchant is saying i have to spend minimum...
+Company: Visa
+Classification -> Type: product_issue, Area: payments
+Retrieval -> Confidence Score (0.7 TFIDF + 0.3 Keyword): 0.24
+Retrieved Document: general.txt
+Decision -> ESCALATED (Low confidence and no safe automated resolution.)
+----------------------------------------
