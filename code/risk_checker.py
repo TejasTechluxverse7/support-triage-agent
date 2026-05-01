@@ -1,20 +1,16 @@
 def check_risk(ticket_text, request_type, product_area, retrieval_confidence):
-    """
-    Evaluates the risk of a ticket.
-    Escalate ONLY for: fraud / billing / account compromise, OR no relevant docs AND unsafe.
-    """
     text_lower = ticket_text.lower()
     
-    # 1. Strict high-risk keywords for fraud/billing/compromise
+    # 1. Financial/Payment override (CRITICAL)
+    if product_area == "payments":
+        return "escalated", "Detected financial/payment-related request."
+        
+    # 2. Strict high-risk keywords
     high_risk_keywords = ["fraud", "unauthorized", "stolen", "compromised", "hacked", "scam", "identity theft", "urgent need for cash"]
     if any(kw in text_lower for kw in high_risk_keywords):
-        return "escalated", "High-risk financial or security keywords detected."
+        return "escalated", "High-risk keywords present."
         
-    # Escalation by product area mapping
-    if product_area == "payments" and any(w in text_lower for w in ["charge", "refund", "dispute"]):
-        return "escalated", "Sensitive billing or payment issue detected."
-
-    # 2. Confidence handling
+    # 3. Confidence handling
     CONFIDENCE_VERY_LOW = 0.25
     CONFIDENCE_SLIGHTLY_LOW = 0.40
     
@@ -23,10 +19,9 @@ def check_risk(ticket_text, request_type, product_area, retrieval_confidence):
             # If very low confidence but it's a bug, we can offer safe generic troubleshooting
             return "replied", "Low confidence but provided safe generic troubleshooting for bug."
         else:
-            return "escalated", "Low confidence and no safe automated resolution."
+            return "escalated", "Low confidence, unsafe to auto-resolve."
             
     if retrieval_confidence < CONFIDENCE_SLIGHTLY_LOW:
-        # If slightly low, we reply if it's a safe category (e.g. feature request, general product issue)
         if request_type in ["feature_request", "invalid"]:
             return "replied", "Slightly low confidence but safe category."
         if product_area not in ["authentication", "security_and_privacy"]:
