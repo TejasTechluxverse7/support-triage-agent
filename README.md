@@ -1,6 +1,6 @@
 # Support Triage Agent
 
-A hackathon-winning, fully compliant support triage agent that relies strictly on local document retrieval to assist users deterministically.
+A fully compliant support triage agent that relies strictly on local document retrieval to assist users deterministically.
 
 ## 📌 Problem Summary
 The system needs to process incoming customer support tickets using **only a local support corpus** (no external AI knowledge or hallucinations). It must accurately classify the product area and request type, retrieve correct answers based strictly on the ticket's domain, and format the results neatly. It must safely escalate high-risk cases (fraud, billing, account compromise) while minimizing unnecessary escalations for lower-risk issues.
@@ -38,3 +38,6 @@ Furthermore, `risk_checker.py` aggressively filters inputs to catch any trigger 
 - **Hybrid Retrieval Score:** TF-IDF excels at semantic weighting, but keyword overlap catches exact terminology. Fusing them provided a more resilient search mechanism.
 - **Smart Formatting:** Recognizing that raw support text is hard to read, the `responder.py` implements an auto-bulleting system that checks for action verbs (`Click`, `Go to`, `Select`) to dynamically create instructional steps out of flat paragraphs.
 - **Explainability:** In hackathons, an AI Judge favors deterministic transparency. `log.txt` outputs every variable used in the pipeline so a reviewer can instantly see the system's "thought process."
+
+  ## Author
+  Tejas Vilas Kondhalkar
